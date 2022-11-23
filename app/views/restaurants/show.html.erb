@@ -3,6 +3,13 @@
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.phone_number %></p>
 
+<h6>Reviews ✍🏾 </h6>
+<ul class="list-group">
+  <% @restaurant.reviews.each do |review| %>
+    <li class="list-group-item"><%= review.content %></li>
+  <% end %>
+</ul>
+<br>
 
-
-<%= link_to "⬅️ Back ",restaurants_path %><%= link_to "| Edit review ✏️ ",edit_restaurant_path(@restaurant) %>
+<%= link_to "⬅️ Back ",restaurants_path %>
+<%= link_to "|➕ Add review",new_restaurant_review_path(@restaurant) %>
