@@ -5,6 +5,7 @@ ruby "3.1.2"
 
 # Custom Gems
 gem "simple_form", github: "heartcombo/simple_form"
+gem 'faker'
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

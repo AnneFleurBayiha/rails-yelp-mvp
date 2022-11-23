@@ -1,0 +1,21 @@
+<h1>🍴
+    <font color="#252A34">R</font>
+    <font color="#753422">e</font>
+    <font color="#FFD523">s</font>
+    <font color="#71EFA3">t</font>
+    <font color="#0F52BA">a</font>
+    <font color="#66CC66">u</font>
+    <font color="#FF9966">r</font>
+    <font color="#FFCCCC">a</font>
+    <font color="#00C1D4">n</font>
+    <font color="#EFE3D0">t</font>
+    <font color="#FF2626">s</font>
+  </h1>
+
+<ul>
+  <%@restaurants.each do |restaurant|  %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "➕ Add restaurant ", new_restaurant_path %>

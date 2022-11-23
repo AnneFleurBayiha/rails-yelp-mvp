@@ -1,0 +1,19 @@
+<h2>New Restaurant</h2>
+
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :category %>
+  <%= f.select :category, Restaurant::CATEGORIES %>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <%= f.submit %>
+<% end %>
+
+
+
+
+
+<%= link_to "⬅️ Back ", restaurants_path %>
